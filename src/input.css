@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.all::before{
+    content: '\201C';
+    cursor: pointer;
+    position: absolute;
+    font-size: 50px;
+    top: 0;
+    margin-top: 0px;
+    left: 0.6px;
+    color: white;
+}
+.all::after{
+    content: '\201D';
+    cursor: pointer;
+    position: absolute;
+    font-size: 50px;
+    bottom: -30;
+    right: 6px;
+    color: white;
+}
+/*    before:absolute before:content['\201C'] before:text-white
+                before:text-6xl before:top-0 before:left-[0.6px] before:cursor-pointer
+                after:absolute after:content['\201D'] after:text-white
+                after:text-6xl after:-bottom-8 after:right-[6px] after:cursor-pointer
+ */
